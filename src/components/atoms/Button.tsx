@@ -2,14 +2,8 @@ import type { ButtonHTMLAttributes, ReactNode } from "react";
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: ReactNode;
-  variant?:
-    | "primary"
-    | "secondary"
-    | "outline1"
-    | "outline2"
-    | "light"
-    | "toggleActive"
-    | "toggleInactive";
+  variant?: "primary" | "secondary" | "outline1";
+
   size?: "sm" | "md" | "lg" | "xl";
   loading?: boolean;
   fullWidth?: boolean;
@@ -40,16 +34,8 @@ const Button = ({
     secondary:
       "bg-secondary text-white capitalize hover:opacity-95 focus:ring-secondary-600 cursor-pointer",
 
-    light:
-      "bg-white text-primary capitalize hover:opacity-95 focus:ring-secondary-600 cursor-pointer",
-
     outline1:
-      "border-2 border-primary text-primary  capitalize focus:ring-primary-500 cursor-pointer",
-    outline2: "border-2 text-dark capitalize cursor-pointer",
-    toggleInactive:
-      "bg-bg-alt  dark:bg-dark-secondary text-gray-600  hover:scale-[1] dark:text-white cursor-pointer",
-    toggleActive:
-      "bg-primary  text-white cursor-pointer  hover:scale-[1] dark:text-dark",
+      "border-2 border-blue text-black  capitalize focus:ring-primary-500 cursor-pointer",
   };
   const sizes = {
     sm: "px-3 py-1.5 text-sm",

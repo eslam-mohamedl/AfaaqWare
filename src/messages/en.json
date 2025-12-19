@@ -2,7 +2,18 @@
   "HomePage": {
     "title": "Hello world!"
   },
-   "language": {
+  "language": {
     "lang": "EN"
+  },
+  "heroSection": {
+    "title1": "Welcome to",
+    "title2": "AfaaqWare For Software Solutions",
+    "hightLightWord": "Software",
+    "type1": "Build Website Development",
+    "type2": "Build Mobile App",
+    "type3": "Training programs",
+    "type4": "Freelancing Services",
+    "btn1": "Create a website now",
+    "btn2": "Contact Us"
   }
 }
