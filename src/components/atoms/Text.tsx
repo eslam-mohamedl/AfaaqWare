@@ -1,9 +1,9 @@
 import { cn } from "@/lib/cn";
 interface TextProps {
   children?: React.ReactNode;
-  size: "sm" | "md" | "lg";
+  size: "sm" | "md" | "lg" | "xl";
   center?: boolean;
-  variant?: "primary" | "secondary" | "gray" | "light";
+  variant?: "primary" | "orange" | "gray" | "light";
   className?: string;
 }
 
@@ -19,10 +19,11 @@ export default function Text({
     sm: "text-sm",
     md: "text-[17px]",
     lg: "text-[20px]",
+    xl: "text-xl",
   };
   const variants = {
     primary: "text-bg",
-    secondary: "text-dark",
+    orange: "text-orange",
     gray: "text-gray-300",
     light: "text-bg",
   };

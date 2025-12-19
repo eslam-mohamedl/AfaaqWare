@@ -23,7 +23,7 @@ export default function Title({
     sm: "text-sm md:text-base lg:text-lg",
     md: "text-base md:text-xl lg:text-2xl",
     lg: "text-xl md:text-2xl lg:text-3xl",
-    xl: "text-2xl md:text-3xl lg:text-4xl",
+    xl: "text-2xl md:text-3xl lg:text-3xl",
   };
   const variants = {
     primary: "text-primary",
