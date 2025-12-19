@@ -4,6 +4,7 @@ interface TitleProps {
   center?: boolean;
   variant?: "primary" | "secondary" | "white";
   className?: string;
+  weight?: "regular" | "semibold" | "bold";
 }
 
 export default function Title({
@@ -11,22 +12,28 @@ export default function Title({
   size = "md",
   center = true,
   variant = "white",
-  className = "pt-[30px] capitalize font-semibold",
+  weight = "semibold",
+  className = "py-0  capitalize font-semibold leading-relaxed ",
   ...props
 }: TitleProps) {
   const sizes = {
-    sm: "text-xl",
-    md: "text-2xl",
-    lg: "text-4xl",
-    xl: "text-5xl",
+    sm: "text-sm md:text-base lg:text-lg",
+    md: "text-base md:text-xl lg:text-2xl",
+    lg: "text-xl md:text-2xl lg:text-3xl",
+    xl: "text-2xl md:text-3xl lg:text-4xl",
   };
   const variants = {
     primary: "text-primary",
     secondary: "text-dark",
     white: "text-bg",
   };
+  const weightVariants = {
+    regular: "font-regular",
+    semibold: "font-semibold",
+    bold: " font-bold",
+  };
   const centerClass = center ? "text-center" : "";
-  const classesHeading = `${sizes[size]}  ${variants[variant]} ${centerClass} ${className}`;
+  const classesHeading = `${sizes[size]}  ${variants[variant]} ${weightVariants[weight]} ${centerClass} ${className}`;
   return (
     <>
       <h2 className={classesHeading} {...props}>

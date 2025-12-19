@@ -18,7 +18,7 @@
     --color-accent-blue-400: rgba(206, 204, 242, 0.64);
     --color-accent-blue-200: rgba(216, 217, 237, 0.44);
     --color-bg-hero: linear-gradient(
-      180deg,
+      90deg,
       #eaeef1 0%,
       #d8d9ef 49%,
       #eaeef1 100%
@@ -43,7 +43,7 @@
     --border-green: rgba(189, 226, 159, 0.89);
     --border-purple: rgba(189, 159, 226, 0.89);
     --border-yellow: rgba(226, 189, 159, 0.89);
-
+    --border-blue: #aaaccf;
     /* Typography */
     --font-sans: "Inter", sans-serif;
     --font-heading: "Poppins", sans-serif;
