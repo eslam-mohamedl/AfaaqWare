@@ -6,7 +6,7 @@ interface ImageFooterProps {
   className?: string;
   width?: number;
   height?: number;
-  bg: "pink" | "purple" | "yellow" | "green";
+  bg?: "pink" | "purple" | "yellow" | "green";
 }
 export default function Images({
   src,
@@ -24,7 +24,7 @@ export default function Images({
     green: "bg-green",
   };
   return (
-    <div className={cn(baseClasses, className, bgVairants[bg])}>
+    <div className={cn(baseClasses, className, bg ? bgVairants[bg] : "")}>
       <Image src={src} alt={alt} quality={100} width={width} height={height} />
     </div>
   );
