@@ -3,7 +3,6 @@ import type { ButtonHTMLAttributes, ReactNode } from "react";
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: ReactNode;
   variant?: "primary" | "secondary" | "outline1";
-
   size?: "sm" | "md" | "lg" | "xl";
   loading?: boolean;
   fullWidth?: boolean;
@@ -47,7 +46,7 @@ const Button = ({
   const widthClass = fullWidth ? "w-full" : "";
   const rounded = isRounded ? "rounded-full" : "rounded-lg";
 
-  const classes = `${baseClasses}  ${variants[variant]}  ${sizes[size]} ${widthClass} ${rounded} ${className}`;
+  const classes = `${baseClasses}  ${variants[variant]} ${sizes[size]} ${widthClass} ${rounded} ${className}`;
 
   const content = (
     <button
