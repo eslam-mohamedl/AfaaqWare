@@ -16,8 +16,8 @@ export default function Text({
 }: TextProps) {
   const sizes = {
     sm: "text-sm",
-    md: "text-[15px]",
-    lg: "text-[18px]",
+    md: "text-[17px]",
+    lg: "text-[20px]",
   };
   const variants = {
     primary: "text-bg",
