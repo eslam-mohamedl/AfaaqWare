@@ -1,3 +1,5 @@
+import { cn } from "@/lib/cn";
+
 interface TitleProps {
   children: React.ReactNode;
   size: "sm" | "md" | "lg" | "xl";
@@ -13,9 +15,10 @@ export default function Title({
   center = true,
   variant = "white",
   weight = "semibold",
-  className = "py-0  capitalize font-semibold leading-relaxed ",
+  className,
   ...props
 }: TitleProps) {
+  const classBase = "py-0 capitalize font-semibold leading-relaxed ";
   const sizes = {
     sm: "text-sm md:text-base lg:text-lg",
     md: "text-base md:text-xl lg:text-2xl",
@@ -30,13 +33,22 @@ export default function Title({
   const weightVariants = {
     regular: "font-regular",
     semibold: "font-semibold",
-    bold: " font-bold",
+    bold: "font-bold",
   };
-  const centerClass = center ? "text-center" : "";
-  const classesHeading = `${sizes[size]}  ${variants[variant]} ${weightVariants[weight]} ${centerClass} ${className}`;
+
   return (
     <>
-      <h2 className={classesHeading} {...props}>
+      <h2
+        className={cn(
+          sizes[size],
+          variants[variant],
+          weightVariants[weight],
+          center ? "text-center" : "",
+          classBase,
+          className
+        )}
+        {...props}
+      >
         {children}
       </h2>
     </>

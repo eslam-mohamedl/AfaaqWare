@@ -1,4 +1,5 @@
 // type for card pricing components
+import { StaticImageData } from "next/image";
 export interface CardPricingProps {
   title?: string;
   description?: string;
@@ -15,11 +16,29 @@ export interface FormProps {
   placeholder?: string;
 }
 // type for card components
+export type BgColor = "pink" | "purple" | "yellow" | "green";
+export type BgBtnColor = BgColor | "primary";
+
 export interface CardProps {
   title: string;
   description: string;
   buttonText: string;
+  img: string | StaticImageData;
+  bg: BgColor;
+  bgBtn: BgBtnColor;
 }
+
+// type for serviceCard components
+export interface ServiceCard {
+  id: number;
+  title: string;
+  text: string;
+  btn: string;
+  img: StaticImageData;
+  bg: BgColor;
+  bgBtn: BgBtnColor;
+}
+
 // type for title section components
 export interface TitleSectionProps {
   title: string;

@@ -1,5 +1,4 @@
 "use client";
-
 import { useRouter, usePathname } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 

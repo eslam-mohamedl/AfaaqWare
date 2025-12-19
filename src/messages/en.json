@@ -15,5 +15,31 @@
     "type4": "Freelancing Services",
     "btn1": "Create a website now",
     "btn2": "Contact Us"
+  },
+  "servicesSection": {
+    "heading": {
+      "title": "Our Services",
+      "subTitle": "We offer you a  comprehensive range of digital services."
+    },
+    "card1": {
+      "title": "Website Development",
+      "text": "Design, programming and development services with integrated technical support services",
+      "btn": "Order your website design now!"
+    },
+    "card2": {
+      "title": "Mobile App",
+      "text": "Application building and programming services with technical support services",
+      "btn": "Order your App  now!"
+    },
+    "card3": {
+      "title": "Training programs",
+      "text": "We provide practical, project-based training to help students and fresh graduates become job-ready.",
+      "btn": "Register to start training with us"
+    },
+    "card4": {
+      "title": "Freelancing Services",
+      "text": "We offer high-quality freelance development and design services delivered by a skilled and reliable team.",
+      "btn": "Order your website design now!"
+    }
   }
 }
