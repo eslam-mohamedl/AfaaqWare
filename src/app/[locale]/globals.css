@@ -60,60 +60,72 @@
   .bg-primary {
     background-color: var(--color-primary);
   }
-
-  .bg-primary-100 {
-    background-color: var(--color-primary-100);
+  .bg-footer {
+    background-color: var(--color-primary-200);
   }
-
-  .bg-primary-400 {
-    background-color: var(--color-primary-400);
+  .bg-white {
+    background-color: var(--color-text-white);
   }
-
-  .bg-primary-600 {
-    background-color: var(--color-primary-600);
+  .bg-gradient {
+    background: var(--color-bg-hero);
   }
-
-  .bg-primary-700 {
-    background-color: var(--color-primary-700);
+  .bg-pink {
+    background-color: var(--color-accent-pink-200);
   }
-
-  .bg-primary-900 {
-    background-color: var(--color-primary-900);
+  .bg-green {
+    background-color: var(--color-accent-green-200);
   }
-  .bg-secondary {
-    background-color: var(--color-secondary);
+  .bg-purple {
+    background-color: var(--color-accent-purple-200);
   }
-  .bg-secondary-600 {
-    background-color: var(--color-secondary-600);
+  .bg-yellow {
+    background-color: var(--color-accent-yellow-200);
   }
-  .bg-secondary-900 {
-    background-color: var(--color-secondary-900);
+  .bg-blue-200 {
+    background-color: var(--color-accent-blue-200);
   }
-
+  .bg-blue-400 {
+    background-color: var(--color-accent-blue-400);
+  }
   /* Text Colors */
   .text-primary {
     color: var(--color-primary);
   }
-  .text-secondary {
-    color: var(--color-secondary);
+  .text-black {
+    color: var(--color-text-black);
   }
-  .text-gary-200 {
-    color: var(--color-gray-200);
+  .text-white {
+    color: var(--color-text-white);
   }
+  .text-orange {
+    color: var(--text-orange);
+  }
+
   /* bg Colors */
-  .bg-bg- {
+  .bg-bg {
     background-color: var(--color-bg);
   }
   .bg-bg-alt {
     background-color: var(--color-bg-alt);
   }
-  .bg-secondary {
-    background-color: var(--color-secondary);
+
+  /* borders Utilities*/
+  .border-pink {
+    border: 1px solid var(--border-pink);
   }
-  /* form color*/
-  .border-form {
-    background-color: var(--color-form);
+  .border-green {
+    border: 1px solid var(--border-green);
   }
+  .border-purple {
+    border: 1px solid var(--border-purple);
+  }
+  .border-yellow {
+    border: 1px solid var(--border-yellow);
+  }
+  .border-white {
+    border: 1px solid var(--color-text-white);
+  }
+
   /* Shadows */
   .shadow-sm {
     box-shadow: var(--shadow-sm);
@@ -124,6 +136,7 @@
   .shadow-lg {
     box-shadow: var(--shadow-lg);
   }
+
   /* Radius Utilities */
   .rounded-sm {
     border-radius: var(--radius-sm);
@@ -160,8 +173,20 @@
   .text-xl {
     font-size: var(--text-xl);
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+  }
   .font-regular {
     font-weight: var(--font-regular);
+  }
+  .font-semibold {
+    font-weight: var(--font-semibold);
   }
   .font-bold {
     font-weight: var(--font-bold);
