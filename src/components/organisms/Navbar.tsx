@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { ListMinus, X, ChevronDown } from "lucide-react";
+import { ListMinus, X, ChevronDown, ArrowRight } from "lucide-react";
 import { Routes } from "@/routes/routes";
 import Button from "../atoms/Button";
 
@@ -37,9 +37,9 @@ export default function Navbar() {
     >
       <div className="container mx-auto flex items-center justify-between py-4 sm:px-10 md:px-0">
         {/* Logo */}
-        <Link href="/" className="text-4xl font-bold md:text-2xl">
-          <span className="text-primary">Survey</span>{" "}
-          <span className="text-bg">Land</span>
+        <Link href="/" className="text-2xl font-bold md:text-1xl">
+          <span className="text-primary">Afaaq</span>
+          <span className="">Ware</span>
         </Link>
 
         {/* Desktop Links */}
@@ -78,13 +78,9 @@ export default function Navbar() {
         {/* Buttons */}
         <div className="hidden items-center gap-3 md:flex">
           <Link href="/sign-in">
-            <Button size="md" variant="outline1">
-              Login
-            </Button>
-          </Link>
-          <Link href="/sign-in">
-            <Button size="md" variant="primary">
-              Sign Up
+            <Button size="md" variant="primary" isRounded={true}>
+              Get Started
+              <ArrowRight size={18} />
             </Button>
           </Link>
         </div>
@@ -158,20 +154,12 @@ export default function Navbar() {
           <li className="mt-6 flex w-full flex-col items-center gap-4">
             <Link href="/sign-in">
               <Button
-                className="bg-primary rounded-md px-4 py-2 text-white transition active:opacity-90"
-                size="md"
-                variant="outline2"
-              >
-                Login
-              </Button>
-            </Link>
-            <Link href="/sign-in">
-              <Button
-                className="bg-primary rounded-md px-4 py-2 text-white transition active:opacity-90"
+                className="bg-primary rounded-md px-4 py-2 text-white transition active:opacity-90 "
                 size="md"
                 variant="secondary"
               >
-                Sign Up
+                Get Started
+                <ArrowRight size={18} />
               </Button>
             </Link>
           </li>

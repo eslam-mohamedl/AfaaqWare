@@ -1,5 +1,12 @@
+import HeroSection from "./HeroSection";
+import Navbar from "./Navbar";
 function Header() {
-  return <div>header</div>;
+  return (
+    <>
+      <Navbar />
+      <HeroSection />
+    </>
+  );
 }
 
 export default Header;
