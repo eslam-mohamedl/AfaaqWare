@@ -32,10 +32,11 @@ const Button = ({
   ...props
 }: ButtonProps) => {
   const baseClasses =
-    "inline-flex items-center justify-center font-medium  transition-all duration-200 hover:scale-[1.04]  focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed rounded-md";
+    "inline-flex items-center justify-center font-medium  transition-all duration-200 hover:scale-[1.04]  focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed";
 
   const variants = {
-    primary: "bg-primary text-white capitalize focus:ring-blue-500 cursor-pointer hover:opacity-95",
+    primary:
+      "bg-primary text-white capitalize focus:ring-blue-500 cursor-pointer hover:opacity-95",
     secondary:
       "bg-secondary text-white capitalize hover:opacity-95 focus:ring-secondary-600 cursor-pointer",
 
@@ -47,7 +48,8 @@ const Button = ({
     outline2: "border-2 text-dark capitalize cursor-pointer",
     toggleInactive:
       "bg-bg-alt  dark:bg-dark-secondary text-gray-600  hover:scale-[1] dark:text-white cursor-pointer",
-    toggleActive: "bg-primary  text-white cursor-pointer  hover:scale-[1] dark:text-dark",
+    toggleActive:
+      "bg-primary  text-white cursor-pointer  hover:scale-[1] dark:text-dark",
   };
   const sizes = {
     sm: "px-3 py-1.5 text-sm",
@@ -57,9 +59,9 @@ const Button = ({
   };
 
   const widthClass = fullWidth ? "w-full" : "";
-  const rounded = isRounded ? "!rounded-full" : "rounded-lg";
+  const rounded = isRounded ? "rounded-full" : "rounded-lg";
 
-  const classes = `${baseClasses} rounded-md ${variants[variant]}  ${sizes[size]} ${widthClass} ${rounded} ${className}`;
+  const classes = `${baseClasses}  ${variants[variant]}  ${sizes[size]} ${widthClass} ${rounded} ${className}`;
 
   const content = (
     <button

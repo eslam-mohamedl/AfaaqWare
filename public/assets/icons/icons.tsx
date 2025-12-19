@@ -15,6 +15,7 @@ import {
   HelpCircle,
   Check,
   LucideShieldCheck,
+  ArrowRight,
 } from "lucide-react";
 
 import { Icon } from "@iconify/react";
@@ -81,4 +82,5 @@ export {
   service2,
   service3,
   LucideShieldCheck,
+  ArrowRight,
 };
