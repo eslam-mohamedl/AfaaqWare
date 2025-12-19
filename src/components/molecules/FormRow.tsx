@@ -1,6 +1,6 @@
 import Input from "../atoms/Input";
 import Title from "../atoms/Title";
-import type { FormProps } from "../../types/api";
+import type { FormProps } from "../../types/api.d";
 export default function FormRow({ label, placeholder }: FormProps) {
   return (
     <div className="flex flex-col gap-1">

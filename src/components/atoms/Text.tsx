@@ -1,3 +1,4 @@
+import { cn } from "@/lib/cn";
 interface TextProps {
   children?: React.ReactNode;
   size: "sm" | "md" | "lg";
@@ -25,11 +26,17 @@ export default function Text({
     gray: "text-gray-300",
     light: "text-bg",
   };
-  const centerClass = center ? "text-center" : "";
-  const classesHeading = `${sizes[size]}  ${variants[variant]} ${centerClass} ${className}`;
   return (
     <>
-      <p className={classesHeading} {...props}>
+      <p
+        className={cn(
+          sizes[size],
+          variants[variant],
+          center ? "text-center" : "",
+          className
+        )}
+        {...props}
+      >
         {children}
       </p>
     </>

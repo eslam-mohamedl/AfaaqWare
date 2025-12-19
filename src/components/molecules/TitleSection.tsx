@@ -1,6 +1,6 @@
 import Text from "../atoms/Text";
 import Title from "../atoms/Title";
-import type { TitleSectionProps } from "../../types/api";
+import type { TitleSectionProps } from "../../types/api.d";
 export default function TitleSection({
   title,
   text,
