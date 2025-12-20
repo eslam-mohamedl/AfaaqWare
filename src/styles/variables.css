@@ -24,6 +24,12 @@
       #eaeef1 100%
     );
 
+    /* circle Colors*/
+    --color-circle-pink-200: #e5d0dd;
+    --color-circle-blue-100: #7aafb6;
+    --color-circle-pink: #984d8f;
+    --color-circle-orange-100: #b78f97;
+
     /* Text Colors */
     --color-text-black: #131522;
     --color-text-white: #ffffff;

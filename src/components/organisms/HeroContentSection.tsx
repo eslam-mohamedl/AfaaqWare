@@ -3,6 +3,7 @@ import GroupButtons from "../molecules/GroupButtoms";
 import TypedText from "@/animations/typeEffect";
 import { useTranslations } from "next-intl";
 import { HighlightText } from "../atoms/HighLightWord";
+import Circle from "../atoms/Circle";
 type HeroContentSectionProps = {
   title1: string;
   title2: string;
@@ -17,10 +18,14 @@ function HeroContentSection({
 }: HeroContentSectionProps) {
   const t = useTranslations();
   return (
-    <section className="flex bg-gradient h-[88vh] flex-col  justify-center items-center">
+    <section className="flex bg-gradient h-[88vh] flex-col  justify-center items-center relative">
       <Title size="lg" variant="primary" className="font-bold mb-2">
         {t(title1)}
       </Title>
+      <Circle size={70} top={140} left={130} color="pink" />
+      <Circle size={15} top={430} left={230} color="blue" />
+      <Circle size={12} top={140} left={1200} color="purple" />
+      <Circle size={20} top={430} left={1200} color="orange" />
       {isBtn ? (
         <>
           <Title size="xl" variant="secondary" className="font-bold mb-2">

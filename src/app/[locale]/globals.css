@@ -108,6 +108,19 @@
   .bg-bg-alt {
     background-color: var(--color-bg-alt);
   }
+  /* circle Colors*/
+  .circle-pink {
+    background-color: var(--color-circle-pink-200);
+  }
+  .circle-purple {
+    background-color: var(--color-circle-pink);
+  }
+  .circle-blue {
+    background-color: var(--color-circle-blue-100);
+  }
+  .circle-orange {
+    background-color: var(--color-circle-orange-100);
+  }
 
   /* borders Utilities*/
   .border-pink {
