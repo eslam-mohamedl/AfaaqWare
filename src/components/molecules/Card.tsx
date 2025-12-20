@@ -15,7 +15,7 @@ export function Card({
   const t = useTranslations();
   return (
     <div className="bg-light-primary w-full dark:bg-dark-secondary flex flex-col justify-center items-center gap-4 rounded-lg py-5 px-4 shadow-lg">
-      <Title size="lg" weight="bold">
+      <Title size="lg" weight="bold" variant="secondary">
         {t(title)}
       </Title>
 
