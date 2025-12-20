@@ -10,14 +10,14 @@ function HeroSection() {
       <Title size="lg" variant="primary" weight="bold">
         {t("title1")}
       </Title>
-      <Title size="xl" weight="bold">
+      <Title size="xl" weight="bold" variant="secondary">
         <HighlightText
           text={t("title2")}
           highlight={t("hightLightWord")}
           highlightClassName="text-primary"
         />
       </Title>
-      <Title size="xl" weight="bold">
+      <Title size="xl" weight="bold" variant="secondary">
         <TypedText
           strings={[t("type1"), t("type2"), t("type3")]}
           typeSpeed={40}
