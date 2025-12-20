@@ -3,10 +3,16 @@ import { business } from "../../../public/assets/images/images";
 import Button from "@/components/atoms/Button";
 import Title from "../atoms/Title";
 import Text from "../atoms/Text";
+import Box from "../molecules/Box";
 export default function AboutAfaaqHome() {
   return (
     <div>
-      <MediaContentSection image={business} bg={true} imageAlt="business-img">
+      <MediaContentSection
+        image={business}
+        bg={true}
+        imageAlt="business-img"
+        className="relative"
+      >
         <Title
           size="lg"
           center={false}
@@ -30,6 +36,11 @@ export default function AboutAfaaqHome() {
         <Button size="md" isRounded={true}>
           Create your website now
         </Button>
+        <div className="grid grid-cols-1 container md:grid-cols-3 gap-5 absolute left-0 -bottom-20">
+          <Box />
+          <Box />
+          <Box />
+        </div>
       </MediaContentSection>
     </div>
   );

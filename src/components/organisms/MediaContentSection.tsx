@@ -21,7 +21,7 @@ export default function MediaContentSection({
   return (
     <section
       className={cn(
-        "container flex flex-col md:flex-row justify-between mb-30  gap-4  py-15",
+        "container flex flex-col md:flex-row justify-between mb-50  gap-4  py-15",
         reverse && "lg:flex-row-reverse",
         bg ? "bg-gradient rounded-lg pb-40" : "",
         className
