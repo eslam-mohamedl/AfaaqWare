@@ -43,7 +43,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Links */}
-        <ul className="text-dark dark:text-light hidden items-center gap-4 text-base font-medium md:flex">
+        <ul className=" hidden items-center gap-4 text-base font-medium md:flex">
           {mainPageSections.map((item) => (
             <li key={item.id}>
               <Link

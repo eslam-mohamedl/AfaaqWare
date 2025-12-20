@@ -1,4 +1,3 @@
-import React from "react";
 import TitleSection from "../molecules/TitleSection";
 import BoxComment from "../molecules/BoxComment";
 export default function CommentSection() {
