@@ -126,7 +126,12 @@
     border: 1px solid var(--color-text-white);
   }
   .border-blue {
-    border: 1px solid var(--border-blue);
+    border-style: solid;
+    border-color: var(--border-blue);
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
   }
   /* Shadows */
   .shadow-sm {
