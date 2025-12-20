@@ -4,6 +4,7 @@ import Services from "@/components/organisms/Services";
 import ContractSection from "@/components/organisms/ContractSection";
 import AboutAfaaqHome from "@/components/organisms/AboutAfaaqHome";
 import PortfoiliosSection from "@/components/organisms/PortfoiliosSection";
+import CommentSection from "@/components/organisms/CommentSection";
 function Page() {
   return (
     <div className="pt-20">
@@ -11,6 +12,7 @@ function Page() {
       <Services />
       <ContractSection />
       <PortfoiliosSection />
+      <CommentSection />
       <AboutAfaaqHome />
 
       <Footer />

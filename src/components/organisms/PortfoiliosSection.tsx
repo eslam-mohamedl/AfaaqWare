@@ -8,7 +8,7 @@ import {
 } from "../../../public/assets/images/images";
 export default function PortfoiliosSection() {
   return (
-    <section className="container bg-gradient mb-20">
+    <section className="container bg-gradient ">
       <TitleSection
         title="Our Services"
         text="We offer you a  comprehensive range of digital services."

@@ -9,7 +9,7 @@ export default function TitleSection({
   isBlue,
 }: TitleSectionProps) {
   return (
-    <div className={cn("py-15  flex flex-col items-center")}>
+    <div className={cn("py-20  flex flex-col items-center")}>
       <Title
         size="md"
         className={cn(
