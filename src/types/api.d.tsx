@@ -43,9 +43,7 @@ export interface ServiceCard {
 export interface TitleSectionProps {
   title: string;
   text: string;
-  titleVariant: "primary" | "white";
-  TextVariant: "primary" | "secondary";
-  highlightWord?: string;
+  isBlue: boolean;
 }
 // type for hero section components
 export interface HeroSectionProps {

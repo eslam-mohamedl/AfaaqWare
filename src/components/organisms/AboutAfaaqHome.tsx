@@ -6,7 +6,7 @@ import Text from "../atoms/Text";
 import Box from "../molecules/Box";
 export default function AboutAfaaqHome() {
   return (
-    <div>
+    <section>
       <MediaContentSection
         image={business}
         bg={true}
@@ -42,6 +42,6 @@ export default function AboutAfaaqHome() {
           <Box />
         </div>
       </MediaContentSection>
-    </div>
+    </section>
   );
 }
