@@ -1,28 +1,25 @@
 import Text from "../atoms/Text";
 import Title from "../atoms/Title";
 import type { TitleSectionProps } from "../../types/api.d";
+import { cn } from "@/lib/cn";
+
 export default function TitleSection({
   title,
   text,
-  titleVariant = "white",
-  TextVariant = "primary",
-  highlightWord,
+  isBlue,
 }: TitleSectionProps) {
-  const parts = highlightWord ? title.split(highlightWord) : [title];
   return (
-    <div className="mt-10 mb-5">
-      <Title size="md" variant={titleVariant}>
-        {highlightWord ? (
-          <>
-            {parts[0]}
-            <span className="text-primary">{highlightWord}</span>
-            {parts[1]}
-          </>
-        ) : (
-          title
+    <div className={cn("py-15  flex flex-col items-center")}>
+      <Title
+        size="md"
+        className={cn(
+          "bg-primary inline-block  px-7 py-3 rounded-full font-bold",
+          isBlue ? "bg-blue-400 text-primary" : "bg-blue-200 text-primary"
         )}
+      >
+        {title}
       </Title>
-      <Text size="md" variant={TextVariant}>
+      <Text size="lg" className="font-semibold mt-5">
         {text}
       </Text>
     </div>
