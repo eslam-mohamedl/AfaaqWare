@@ -3,4 +3,5 @@ import service2 from "./service-2.svg";
 import service3 from "./service-3.svg";
 import service4 from "./service-4.svg";
 import contractImage from "./contractImage.svg";
-export { service1, service2, service3, service4, contractImage };
+import logo from "./logo.svg";
+export { service1, service2, service3, service4, contractImage, logo };

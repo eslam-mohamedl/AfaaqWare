@@ -3,7 +3,7 @@ interface TextProps {
   children?: React.ReactNode;
   size: "sm" | "md" | "lg" | "xl";
   center?: boolean;
-  variant?: "primary" | "orange" | "gray" | "light";
+  variant?: "primary" | "orange" | "gray" | "white";
   className?: string;
 }
 
@@ -12,7 +12,7 @@ export default function Text({
   size = "md",
   center = true,
   variant = "primary",
-  className = "pt-2.5 capitalize font-semibold",
+  className = "pt-2.5 capitalize ",
   ...props
 }: TextProps) {
   const sizes = {
@@ -25,7 +25,7 @@ export default function Text({
     primary: "text-bg",
     orange: "text-orange",
     gray: "text-gray-300",
-    light: "text-bg",
+    white: "text-white",
   };
   return (
     <>

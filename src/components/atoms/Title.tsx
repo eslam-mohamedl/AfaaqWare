@@ -28,7 +28,7 @@ export default function Title({
   const variants = {
     primary: "text-primary",
     secondary: "text-dark",
-    white: "text-bg",
+    white: "text-white",
   };
   const weightVariants = {
     regular: "font-regular",

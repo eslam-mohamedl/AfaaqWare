@@ -4,7 +4,7 @@ import { cn } from "@/lib/cn";
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: ReactNode;
   variant?: "primary" | "secondary" | "outline1";
-  size?: "sm" | "md" | "lg" | "xl";
+  size?: "sm" | "md" | "lg";
   loading?: boolean;
   fullWidth?: boolean;
   center?: boolean;
@@ -38,9 +38,8 @@ const Button = ({
   };
   const sizes = {
     sm: "px-3 py-2 text-sm",
-    md: "px-5 py-[8px] text-[17px] ",
-    lg: "px-6 py-3 text-[20px]",
-    xl: "px-8 py-4 text-lg",
+    md: "px-6 py-3 text-md",
+    lg: "px-6 py-4 text-lg",
   };
   const bgVariants = {
     pink: "bg-pink text-black border-pink",
