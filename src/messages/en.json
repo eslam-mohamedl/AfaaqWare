@@ -42,6 +42,16 @@
       "btn": "Order your website design now!"
     }
   },
+  "contractSection": {
+    "title1": "40% when signing the contract",
+    "hightLightWord1": "contract",
+    "title2": "30% after design approval",
+    "hightLightWord2": "approval",
+    "title3": "30% upon complete delivery of the store",
+    "hightLightWord3": "store",
+    "text": "Payment methods are defined in the signed contract",
+    "btn": "Create a website now"
+  },
   "footer": {
     "text": "Our company is a leader and distinguished provider of website development and design services, as well as training for young Egyptians and Arabs.",
     "col1": {
