@@ -11,6 +11,7 @@ import logo from "./logo.svg";
 import business from "./BusinessImage.svg";
 import Eslam from "./Eslam.svg";
 import Abdallah from "./Abdallah.svg";
+import mohamed from "./Mohamed.png";
 export {
   service1,
   service2,
@@ -25,4 +26,5 @@ export {
   project4,
   Eslam,
   Abdallah,
+  mohamed,
 };

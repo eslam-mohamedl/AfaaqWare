@@ -24,7 +24,7 @@ export default function FooterLeftSide() {
       >
         {t("text")}
       </Text>
-      <SoicalLinks color={true} />
+      <SoicalLinks href1="eslam" href2="eslam" href3="eslam" color={true} />
     </div>
   );
 }
