@@ -52,6 +52,10 @@
     "text": "Payment methods are defined in the signed contract",
     "btn": "Create a website now"
   },
+  "PortoflioSection": {
+    "title": "Our Portoflios",
+    "subTitle": "Afaq Ware offers the best solutions and deals available for website design."
+  },
   "footer": {
     "text": "Our company is a leader and distinguished provider of website development and design services, as well as training for young Egyptians and Arabs.",
     "col1": {
@@ -98,6 +102,34 @@
     "person3": {
       "title": "Mohamed Omar",
       "job": "Founder & CTO"
+    }
+  },
+  "commentSection": {
+    "title": "Customer Reviews",
+    "subTitle": "We continued our creativity with our clients",
+    "card1": {
+      "name": "Mona",
+      "comment": "The training opportunity was amazing, and I benefited a lot from the team experience."
+    },
+    "card2": {
+      "name": "Mohamed",
+      "comment": "Fast delivery and punctuality. Thank you very much!"
+    },
+    "card3": {
+      "name": "Sami",
+      "comment": "The mentors are very skilled and experienced, excellent collaboration!"
+    },
+    "card4": {
+      "name": "Khaled",
+      "comment": "The projects were complete and I worked with the team on real projects. Amazing!"
+    },
+    "card5": {
+      "name": "Nadine",
+      "comment": "I enjoyed the practical work and learned a lot through real-life projects."
+    },
+    "card6": {
+      "name": "Huda",
+      "comment": "Professional team, great guidance, and continuous support throughout the training."
     }
   }
 }

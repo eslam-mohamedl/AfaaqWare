@@ -79,3 +79,36 @@ export const dataServices: ServiceCard[] = [
     bgBtn: "yellow",
   },
 ];
+
+export const dataComment = [
+  {
+    id: 1,
+    name: "commentSection.card1.name",
+    comment: "commentSection.card1.comment",
+  },
+  {
+    id: 2,
+    name: "commentSection.card2.name",
+    comment: "commentSection.card2.comment",
+  },
+  {
+    id: 3,
+    name: "commentSection.card3.name",
+    comment: "commentSection.card3.comment",
+  },
+  {
+    id: 4,
+    name: "commentSection.card4.name",
+    comment: "commentSection.card4.comment",
+  },
+  {
+    id: 5,
+    name: "commentSection.card5.name",
+    comment: "commentSection.card5.comment",
+  },
+  {
+    id: 6,
+    name: "commentSection.card6.name",
+    comment: "commentSection.card6.comment",
+  },
+];

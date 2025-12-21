@@ -1,16 +1,28 @@
 import Title from "../atoms/Title";
 import Text from "../atoms/Text";
 import { SeparatorLine } from "../atoms/SeperatorLink";
-export default function BoxComment() {
+import { useTranslations } from "next-intl";
+import { cn } from "@/lib/cn";
+type BoxCommentProps = {
+  comment: string;
+  name: string;
+  className?: string;
+};
+
+export default function BoxComment({
+  comment,
+  name,
+  className,
+}: BoxCommentProps) {
+  const t = useTranslations();
   return (
-    <div className="bg-white py-4 px-4 rounded-md border-blue ">
+    <div className={cn("bg-white py-4 px-4 rounded-md border-blue", className)}>
       <Title size="md" variant="secondary">
-        samy
+        {t(name)}
       </Title>
       <SeparatorLine centered className="mt-2" />
       <Text size="md" className="py-4">
-        The training opportunity was great and I benefited a lot from the team
-        concept.
+        {t(comment)}
       </Text>
     </div>
   );
