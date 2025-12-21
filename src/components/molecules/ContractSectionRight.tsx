@@ -6,8 +6,8 @@ export default function ContractSectionRight() {
       <Images
         src={contractImage}
         alt="Contract-image"
-        height={450}
-        width={450}
+        height={430}
+        width={430}
       />
     </div>
   );
