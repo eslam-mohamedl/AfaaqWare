@@ -8,7 +8,7 @@ type BoxProps = {
 export default function Box({ title, text }: BoxProps) {
   const t = useTranslations();
   return (
-    <div className="bg-white flex flex-col justify-center  w-70 h-45 rounded-lg">
+    <div className="bg-white flex flex-col justify-center  md:w-70 md:h-45 rounded-lg">
       <Title size="xl" variant="primary">
         {t(title)}
       </Title>

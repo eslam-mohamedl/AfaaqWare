@@ -1,8 +1,6 @@
 type CircleProps = {
-  size: number;
-  top: number;
-  left: number;
   color?: "pink" | "blue" | "purple" | "orange";
+  className: string;
 };
 
 const variantsColor = {
@@ -12,16 +10,10 @@ const variantsColor = {
   orange: "circle-orange",
 };
 
-function Circle({ size, top, left, color = "pink" }: CircleProps) {
+function Circle({ color = "pink", className }: CircleProps) {
   return (
     <div
-      className={`absolute rounded-full ${variantsColor[color]}`}
-      style={{
-        width: size,
-        height: size,
-        top,
-        left,
-      }}
+      className={`absolute rounded-full ${variantsColor[color]} ${className}`}
     />
   );
 }

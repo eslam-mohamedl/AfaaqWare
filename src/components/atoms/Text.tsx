@@ -17,8 +17,8 @@ export default function Text({
 }: TextProps) {
   const sizes = {
     sm: "text-sm",
-    md: "text-[17px]",
-    lg: "text-[20px]",
+    md: "text-[16px] md:text-[17px]",
+    lg: "text-[18px] md:text-[20px] ",
     xl: "text-xl",
   };
   const variants = {

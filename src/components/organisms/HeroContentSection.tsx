@@ -30,10 +30,19 @@ function HeroContentSection({
       <Title size="lg" variant="primary" className="font-bold mb-2">
         {t(title1)}
       </Title>
-      <Circle size={70} top={140} left={130} color="pink" />
-      <Circle size={15} top={430} left={230} color="blue" />
-      <Circle size={12} top={140} left={1200} color="purple" />
-      <Circle size={20} top={430} left={1200} color="orange" />
+      <Circle className="left-10 md:left-50 top-25  w-15 h-15" color="pink" />
+      <Circle
+        className="left-10 md:left-70 md:top-110 top-160 w-9 md:w-3 h-9 md:h-3"
+        color="blue"
+      />
+      <Circle
+        className="right-10 md:right-30 top-40 w-5 h-5 md:w-3 md:h-3"
+        color="purple"
+      />
+      <Circle
+        className="right-10 md:right-20  md:top-120 top-140 w-3 h-3"
+        color="orange"
+      />
       {isBtn ? (
         <>
           <Title size="xl" variant="secondary" className="font-bold mb-2">

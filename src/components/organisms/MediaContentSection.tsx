@@ -52,7 +52,7 @@ export default function MediaContentSection({
             <Text size="md" center={false} className="font-bold mb-2">
               {t("AboutAfaaqWare.title4")}
             </Text>
-            <Text size="md" center={false} className="font-bold mb-5">
+            <Text size="sm" center={false} className="font-bold mb-5">
               {t("AboutAfaaqWare.title5")}
             </Text>
             <Button size="md" isRounded={true}>
@@ -60,8 +60,10 @@ export default function MediaContentSection({
             </Button>
             <div
               className={cn(
-                "grid grid-cols-1 container md:grid-cols-3 gap-5 absolute left-[6%] -bottom-20",
-                dir === "en" ? "left-[7%]" : "right-[7%]"
+                "grid grid-cols-3  md:grid-cols-3 gap-5 absolute  -bottom-20",
+                dir === "en"
+                  ? "left-[0%] md:left-[15%]"
+                  : "right-[0%] md:right-[7%]"
               )}
             >
               {dataBox.map((box) => (
