@@ -9,6 +9,8 @@ import project3 from "./project-3.png";
 import project4 from "./project-4.png";
 import logo from "./logo.svg";
 import business from "./BusinessImage.svg";
+import Eslam from "./Eslam.svg";
+import Abdallah from "./Abdallah.svg";
 export {
   service1,
   service2,
@@ -21,4 +23,6 @@ export {
   project2,
   project3,
   project4,
+  Eslam,
+  Abdallah,
 };
