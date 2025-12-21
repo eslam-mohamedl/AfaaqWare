@@ -146,6 +146,9 @@
     border-bottom-width: 3px;
     border-left-width: 3px;
   }
+  .border-white {
+    border: 2px solid var(--border-blue);
+  }
   /* Shadows */
   .shadow-sm {
     box-shadow: var(--shadow-sm);

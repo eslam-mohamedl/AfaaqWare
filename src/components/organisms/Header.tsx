@@ -1,10 +1,11 @@
-import HeroSection from "./HeroSection";
 import Navbar from "./Navbar";
+import HeroContentSection from "./HeroContentSection";
 function Header() {
   return (
     <>
       <Navbar />
-      <HeroSection />
+
+      <HeroContentSection isBtn={true} />
     </>
   );
 }

@@ -5,16 +5,24 @@ import { useTranslations } from "next-intl";
 import { HighlightText } from "../atoms/HighLightWord";
 import Circle from "../atoms/Circle";
 type HeroContentSectionProps = {
-  title1: string;
-  title2: string;
-  title3: string;
+  title1?: string;
+  title2?: string;
+  title3?: string;
   isBtn: boolean;
+  type1?: string;
+  type2?: string;
+  type3?: string;
+  hightLightWord?: string;
 };
 function HeroContentSection({
-  title1,
-  title2,
-  title3,
+  title1 = "heroSection.title1",
+  title2 = "heroSection.title2",
+  title3 = "heroSection.title3",
   isBtn,
+  type1 = "heroSection.type1",
+  type3 = "heroSection.type2",
+  type2 = "heroSection.type3",
+  hightLightWord = "heroSection.hightLightWord",
 }: HeroContentSectionProps) {
   const t = useTranslations();
   return (
@@ -30,14 +38,14 @@ function HeroContentSection({
         <>
           <Title size="xl" variant="secondary" className="font-bold mb-2">
             <HighlightText
-              text={t("title2")}
-              highlight={t("hightLightWord")}
+              text={t(title2)}
+              highlight={t(hightLightWord)}
               highlightClassName="text-primary"
             />
           </Title>
           <Title size="xl" variant="secondary" className="font-bold mb-2">
             <TypedText
-              strings={[t("type1"), t("type2"), t("type3")]}
+              strings={[t(type1), t(type2), t(type3)]}
               typeSpeed={40}
               backSpeed={40}
               className=" ml-2"

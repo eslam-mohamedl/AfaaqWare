@@ -34,7 +34,7 @@ const Button = ({
     secondary:
       "bg-secondary text-white capitalize hover:opacity-95 focus:ring-secondary-600 cursor-pointer",
     outline1:
-      "border-2 border-blue text-black w-full  capitalize focus:ring-primary-500 cursor-pointer",
+      "border-2 border-white text-black w-full  capitalize focus:ring-primary-500 cursor-pointer",
   };
   const sizes = {
     sm: "px-3 py-2 text-sm",
