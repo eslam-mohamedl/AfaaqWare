@@ -5,7 +5,7 @@ import Title from "../atoms/Title";
 import Text from "../atoms/Text";
 import Box from "../molecules/Box";
 import { business } from "../../../public/assets/images/images";
-
+import { useTranslations } from "next-intl";
 type MediaContentSectionProps = {
   className?: string;
   reverse?: boolean;
@@ -18,6 +18,7 @@ export default function MediaContentSection({
   bg = false,
   isHome = false,
 }: MediaContentSectionProps) {
+  const t = useTranslations();
   return (
     <section
       className={cn(
@@ -64,23 +65,16 @@ export default function MediaContentSection({
         ) : (
           <div className="flex-1 flex flex-col justify-center items-start">
             <Title size="lg" variant="primary">
-              لماذا أفاق وير
+              {t("about.whyAfaaqWare.title")}
             </Title>
             <Text size="md" center={false}>
-              أفاق وير هي شركة Software House متكاملة، نبني مشاريع العملاء من
-              البداية حتى الإطلاق: دراسة الفكرة، تصميم UI/UX، Front-end،
-              Back-end، Testing. فريقنا من الخبراء يضمن تنفيذ المشاريع باحترافية
-              عالية وفق أعلى معايير الجودة. نقدم عروض أسعار واضحة، وننفذ المشروع
-              بالكامل بعد موافقة العميل
+              {t("about.whyAfaaqWare.text1")}
             </Text>
             <Text size="md" center={false}>
-              التدريب نقدم برامج تدريبية عملية لشباب الفريش في UI/UX، Front-end،
-              Back-end، Testing، ليكونوا جاهزين لسوق العمل أو الانضمام لمشاريع
-              الشركة كمحترفين مستقلين. هدفنا تمكين الطلاب وتحويلهم إلى محترفين
-              قادرين على بناء مشاريع رقمية متكاملة بخبرة عملية حقيقية.
+              {t("about.whyAfaaqWare.text2")}
             </Text>
             <Button size="md" className="mt-5">
-              انشئ موقعك الان
+              {t("about.whyAfaaqWare.btn")}
             </Button>
           </div>
         )}

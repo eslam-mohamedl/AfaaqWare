@@ -1,19 +1,37 @@
 import Title from "../atoms/Title";
 import Text from "../atoms/Text";
 import Images from "../atoms/Images";
-import { Eslam } from "../../../public/assets/images/images";
 import SoicalLinks from "./footer/SoicalLinks";
-export default function CardPerson() {
-  const color = "text-primary";
+import { StaticImageData } from "next/image";
+import { useTranslations } from "next-intl";
+interface CardPersonProps {
+  img: string | StaticImageData;
+  alt: string;
+  title: string;
+  text: string;
+  href1: string;
+  href2: string;
+  href3: string;
+}
+export default function CardPerson({
+  img,
+  alt,
+  title,
+  text,
+  href1,
+  href2,
+  href3,
+}: CardPersonProps) {
+  const t = useTranslations();
   return (
     <div className="bg-white rounded-lg">
-      <Images src={Eslam} alt="Eslam" />
+      <Images src={img} alt={alt} />
       <Title size="lg" variant="primary" className="font-bold">
-        Eslam Mohamed
+        {t(title)}
       </Title>
-      <Text size="lg">Founder | CEO</Text>
+      <Text size="lg">{t(text)}</Text>
       <div className="flex justify-center">
-        <SoicalLinks color={false} />
+        <SoicalLinks href1={href1} href2={href2} href3={href3} color={false} />
       </div>
     </div>
   );

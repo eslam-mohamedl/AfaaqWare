@@ -3,8 +3,44 @@ import {
   service2,
   service3,
   service4,
+  Eslam,
+  Abdallah,
+  mohamed,
 } from "../../public/assets/images/images";
 import { ServiceCard } from "@/types/api.d";
+
+export const dataPerson = [
+  {
+    id: 1,
+    img: Eslam,
+    title: "CardsFounder.person1.title",
+    text: "CardsFounder.person1.job",
+    alt: "Eslam-img",
+    href1: "www.eslam.com",
+    href2: "www.eslam.com",
+    href3: "www.eslam.com",
+  },
+  {
+    id: 2,
+    img: Abdallah,
+    title: "CardsFounder.person2.title",
+    text: "CardsFounder.person2.job",
+    alt: "Abdallah-img",
+    href1: "www.Abdallah.com",
+    href2: "www.Abdallah.com",
+    href3: "www.Abdallah.com",
+  },
+  {
+    id: 3,
+    img: mohamed,
+    title: "CardsFounder.person3.title",
+    text: "CardsFounder.person3.job",
+    alt: "mohamed-img",
+    href1: "www.mohamed.com",
+    href2: "www.mohamed.com",
+    href3: "www.mohamed.com",
+  },
+];
 export const dataServices: ServiceCard[] = [
   {
     id: 1,
