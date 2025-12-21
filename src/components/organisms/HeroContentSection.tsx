@@ -18,7 +18,7 @@ function HeroContentSection({
 }: HeroContentSectionProps) {
   const t = useTranslations();
   return (
-    <section className="flex bg-gradient h-[88vh] flex-col  justify-center items-center relative">
+    <section className="flex bg-gradient h-screen flex-col  justify-center items-center relative">
       <Title size="lg" variant="primary" className="font-bold mb-2">
         {t(title1)}
       </Title>

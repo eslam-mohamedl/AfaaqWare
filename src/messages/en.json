@@ -41,5 +41,53 @@
       "text": "We offer high-quality freelance development and design services delivered by a skilled and reliable team.",
       "btn": "Order your website design now!"
     }
+  },
+  "footer": {
+    "text": "Our company is a leader and distinguished provider of website development and design services, as well as training for young Egyptians and Arabs.",
+    "col1": {
+      "title": "Our service",
+      "list1": "Website design",
+      "list2": "App design",
+      "list3": "Training Egyptian and Arab youth"
+    },
+    "col2": {
+      "title1":"Important links",
+      "list1":"Home",
+      "list2":"About Us",
+      "list3":"Training",
+      "list4":"Contact us"
+    },
+    "copyRight": {
+      "text": "All rights reserved ©2023 AfaqWare Compnay | Website Design Company"
+    }
+  },
+  "about": {
+    "heroAbout": {
+      "title1": "About Us",
+      "title2": "We are a startup specializing in web design and development",
+      "title3": "We provide professional training for Egyptian and Arab youth"
+    },
+    "whyAfaaqWare": {
+      "title": "Why Choose AfaaqWare",
+      "text1": "Afak Wear is a full-service software house that builds client projects from concept to launch — including idea validation, UI/UX design, front-end and back-end development, and testing. Our expert team ensures high-quality execution in line with the highest industry standards. We offer transparent pricing and deliver the complete project after client approval.",
+      "text2": "We offer hands-on training programs for fresh graduates in UI/UX, Front-end, Back-end, and Testing, preparing them for the job market or to join company projects as professional freelancers. Our goal is to empower students and transform them into skilled professionals capable of building complete digital projects with real-world, practical experience.",
+      "btn": "Build Your Website Now"
+    },
+    "CardsFounder": {
+      "title": "Meet Our Founders",
+      "subtitle": "Experienced founders with a clear vision and strong leadership.",
+      "person1": {
+        "title": "Eslam Mohamed",
+        "job": "Founder & CEO"
+      },
+      "person2": {
+        "title": "Abdallah Elnakeep",
+        "job": "Founder & CCO"
+      },
+      "person13": {
+        "title": "Mohamed Omar",
+        "job": "Founder & CTO"
+      }
+    }
   }
 }
