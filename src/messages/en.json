@@ -93,15 +93,15 @@
     "subtitle": "Experienced founders with a clear vision and strong leadership.",
     "person1": {
       "title": "Eslam Mohamed",
-      "job": "Founder & CEO"
+      "job": "Co-Founder & CEO"
     },
     "person2": {
       "title": "Abdallah Elnakeep",
-      "job": "Founder & CCO"
+      "job": "Co-Founder & CCO"
     },
     "person3": {
       "title": "Mohamed Omar",
-      "job": "Founder & CTO"
+      "job": "Co-Founder & CTO"
     }
   },
   "commentSection": {
@@ -130,6 +130,26 @@
     "card6": {
       "name": "Huda",
       "comment": "Professional team, great guidance, and continuous support throughout the training."
+    }
+  },
+  "AboutAfaaqWare": {
+    "title1": "AfaqWare Web and Application Software",
+    "title2": "An Egyptian company specializing in web and application programming.",
+    "title3": "Training Egyptian and Arab youth on real projects",
+    "title4": "More than one year of experience in project construction",
+    "title5": "Providing after-sales technical support",
+    "btn": "Create your website now",
+    "card1": {
+      "title": "1+",
+      "text": "Years of experience"
+    },
+    "card2": {
+      "title": "15+",
+      "text": "Projects implemented"
+    },
+    "card3": {
+      "title": "50+",
+      "text": "Happy customers"
     }
   }
 }

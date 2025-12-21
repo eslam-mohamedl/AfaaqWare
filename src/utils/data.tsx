@@ -112,3 +112,21 @@ export const dataComment = [
     comment: "commentSection.card6.comment",
   },
 ];
+
+export const dataBox = [
+  {
+    id: 1,
+    title: "AboutAfaaqWare.card1.title",
+    text: "AboutAfaaqWare.card1.text",
+  },
+  {
+    id: 2,
+    title: "AboutAfaaqWare.card2.title",
+    text: "AboutAfaaqWare.card2.text",
+  },
+  {
+    id: 3,
+    title: "AboutAfaaqWare.card3.title",
+    text: "AboutAfaaqWare.card3.text",
+  },
+];
