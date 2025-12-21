@@ -22,8 +22,8 @@ export default function Title({
   const sizes = {
     sm: "text-sm md:text-base lg:text-lg",
     md: "text-base md:text-xl lg:text-2xl",
-    lg: "text-xl md:text-2xl lg:text-3xl",
-    xl: "text-2xl md:text-3xl lg:text-[35px]",
+    lg: "text-lg md:text-2xl lg:text-3xl",
+    xl: "text-xl md:text-3xl lg:text-[35px]",
   };
   const variants = {
     primary: "text-primary",

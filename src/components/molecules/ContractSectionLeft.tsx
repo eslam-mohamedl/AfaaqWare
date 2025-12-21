@@ -28,7 +28,7 @@ export default function ContractSectionLeft() {
           highlightClassName="text-primary"
         />
       </Title>
-      <Text size="xl" center={false} variant="orange" className="my-4 ">
+      <Text size="lg" center={false} variant="orange" className="my-4 ">
         {t("text")}
       </Text>
       <Button size="md" isRounded={true}>

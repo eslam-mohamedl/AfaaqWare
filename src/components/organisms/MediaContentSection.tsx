@@ -6,6 +6,8 @@ import Text from "../atoms/Text";
 import Box from "../molecules/Box";
 import { business } from "../../../public/assets/images/images";
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
+import { dataBox } from "@/utils/data";
 type MediaContentSectionProps = {
   className?: string;
   reverse?: boolean;
@@ -19,6 +21,7 @@ export default function MediaContentSection({
   isHome = false,
 }: MediaContentSectionProps) {
   const t = useTranslations();
+  const dir = useLocale();
   return (
     <section
       className={cn(
@@ -38,28 +41,34 @@ export default function MediaContentSection({
               variant="primary"
               className="bg-white py-2 px-7 rounded-full font-semibold mb-4"
             >
-              AfaqWare Web and Application Software
+              {t("AboutAfaaqWare.title1")}
             </Title>
             <Text size="md" center={false} className="font-bold mb-2">
-              An Egyptian company specializing in web and application
-              programming.
+              {t("AboutAfaaqWare.title2")}
             </Text>
             <Text size="md" center={false} className="font-bold mb-2">
-              Training Egyptian and Arab youth on real projects
+              {t("AboutAfaaqWare.title3")}
             </Text>
             <Text size="md" center={false} className="font-bold mb-2">
-              More than one year of experience in project construction
+              {t("AboutAfaaqWare.title4")}
             </Text>
-            <Text size="md" center={false} className="font-bold mb-5">
-              Providing after-sales technical support
+            <Text size="sm" center={false} className="font-bold mb-5">
+              {t("AboutAfaaqWare.title5")}
             </Text>
             <Button size="md" isRounded={true}>
-              Create your website now
+              {t("AboutAfaaqWare.btn")}
             </Button>
-            <div className="grid grid-cols-1 container md:grid-cols-3 gap-5 absolute left-20 -bottom-20">
-              <Box />
-              <Box />
-              <Box />
+            <div
+              className={cn(
+                "grid grid-cols-3  md:grid-cols-3 gap-5 absolute  -bottom-20",
+                dir === "en"
+                  ? "left-[0%] md:left-[15%]"
+                  : "right-[0%] md:right-[7%]"
+              )}
+            >
+              {dataBox.map((box) => (
+                <Box key={box.id} title={box.title} text={box.text} />
+              ))}
             </div>
           </>
         ) : (

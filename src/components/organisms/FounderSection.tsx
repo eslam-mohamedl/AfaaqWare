@@ -7,7 +7,7 @@ export default function FounderSection() {
   return (
     <section className="container mb-20">
       <TitleSection title={t("title")} text={t("subtitle")} isBlue={false} />
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {dataPerson.map((person) => (
           <CardPerson
             key={person.id}
